@@ -26,6 +26,3 @@ if __name__ == "__main__":
     solution = Solution()
     print(solution.duplicate([2, 3, 1, 0, 2, 5, 3], duplication=[0, 1, 2]))
 
-# 10min
-# 思路：
-# 尽量用hash

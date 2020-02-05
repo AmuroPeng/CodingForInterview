@@ -36,10 +36,3 @@ class Solution:
 if __name__ == "__main__":
     solution = Solution()
     print(solution.multiply([2, 3, 4, 5]))
-
-
-# 复杂度O(n)
-# 看了答案
-
-# 思路：根目录图
-# 很多相同的部分->分成两部分，可以每个部分每次多乘一个数，就是一次遍历了
