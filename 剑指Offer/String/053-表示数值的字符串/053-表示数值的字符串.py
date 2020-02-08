@@ -54,3 +54,5 @@ if __name__ == "__main__":
     print(solution.isNumeric('12e', sign=0, point=0, e=0, begin=0))  # False
     print(solution.isNumeric('1.2.3', sign=0, point=0, e=0, begin=0))  # False
     print(solution.isNumeric('12e+4.3', sign=0, point=0, e=0, begin=0))  # False
+
+# 不能改题目函数的传参，因为oj无法识别。但是可以改成是self.sign。加一个__init__函数写上就好。
