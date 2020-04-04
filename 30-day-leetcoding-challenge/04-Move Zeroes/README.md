@@ -26,6 +26,6 @@ A two-pointer approach could be helpful here. The idea would be to have one poin
 O(n)
 
 # 思路
-1. 双指针
+1. 双指针：前后指针
 
 10+0
