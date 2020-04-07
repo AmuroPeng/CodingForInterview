@@ -40,5 +40,6 @@ O()
 
    > 原文链接：https://blog.csdn.net/qq_17753903/article/details/85345996
 2. 初始化dic = collections.defaultdict(list) 意思是dict里的值是list型的，便于直接使用append
+3. set是可变集合，相对应的frozenset是不可变集合
 
 20+0
