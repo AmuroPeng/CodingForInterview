@@ -8,18 +8,22 @@ class TreeNode:
 
 class Solution:
     def diameterOfBinaryTree(self, root: TreeNode) -> int:
+        self.max_ = 0
+
         def getDepth(root, depth):
+            depth += 1
             if root.left and root.right:
-                return max(getDepth(root.left, depth), getDepth(root.right, depth))
+                self.max = max(getDepth(root.left, depth) +
+                               getDepth(root.right, depth), self.max_)
+                return max(getDepth(root.left, depth),
+                           getDepth(root.right, depth))
             elif root.left:
-                depth += 1
-                return getDepth(root.left, depth)+1
+                return getDepth(root.left, depth)
             elif root.right:
-                depth += 1
-                return getDepth(root.right, depth)+1
+                return getDepth(root.right, depth)
             else:
-                return 1
-        return getDepth(root, 0)
+                return depth
+        return max(getDepth(root, 0), self.max_)
 
 
 if __name__ == "__main__":
