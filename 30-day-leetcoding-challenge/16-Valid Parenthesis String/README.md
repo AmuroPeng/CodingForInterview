@@ -1,5 +1,5 @@
 # 16-Valid Parenthesis String
-# 
+# https://leetcode-cn.com/problems/Valid-Parenthesis-String/comments/
 -----------
 # 题目链接
 
@@ -29,7 +29,7 @@ The string size will be in the range [1, 100].
 2. 空间复杂度 O()
 
 # 思路
-1. 
+1. 两个栈
 2. 
 
 0+0

@@ -6,28 +6,35 @@ class Solution:
         # chars = collections.deque(s)
         # left = 0
         # right = 0
-        chars=[]
-        while chars :
-            if chars[0] == "*":
-                chars.popleft()
-                left += 1
-            elif chars[0] == "(":
-                if chars[-1] == "*":
-                    right += 1
-                    chars.pop()
-                elif chars[-1] == ")":
-                    chars.popleft()
-                    chars.pop()
-                else:  # ")"
-                    if right:
-                        chars.popleft()
-                        right -= 1
+        chars = []
+        count = 0
+        for i in s:
+            if i == "(" or i == "*":
+                chars.append(i)
+            else:  # ")"
+                if chars == []:
+                    if count:
+                        count -= 1
                     else:
                         return False
-            else:  # ")"
-                if left:
+                elif chars[-1] == "(":
                     chars.pop()
-                    left -= 1
+                else:
+                    for j in reversed(chars):
+                        if j == "*":
+                            chars.pop()
+                            count += 1
+                        else:
+                            chars.pop()
+                            break
+        while chars:
+            if chars[-1] == "*":
+                count += 1
+                chars.pop()
+            else:  # "("
+                if count:
+                    count -= 1
+                    chars.pop()
                 else:
                     return False
         return True
