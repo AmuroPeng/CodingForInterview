@@ -7,7 +7,6 @@ class Solution:
             for i in ['a', 'b', 'c']:
                 if last_char != i:
                     k,p = self.getHappyString(n, k, p+i, i)
-                    print(str(p+i)+'   '+str(k)+'    '+str(len(p)))
                 if k == 0:
                     return p+i
         return k,p
