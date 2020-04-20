@@ -24,11 +24,11 @@ Note:
 The values of preorder are distinct.
 
 # 复杂度
-1. 时间复杂度 O()
-2. 空间复杂度 O()
+1. 时间复杂度 O(n)
+2. 空间复杂度 O(n)
 
 # 思路
-1. 
+1. 二叉搜索树：所有left小于root，right大于root
 2. 
 
 0+0
