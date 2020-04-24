@@ -37,7 +37,8 @@ cache.get(4);       // returns 4
 1. 🌟不会，所以没具体写。经典题：LRU缓存
 2. LRU需要用双链表+hash表
 3. 或者用自带的有序字典：有一种叫做有序字典的数据结构，综合了哈希表和链表，在 Python 中为 OrderedDict，在 Java 中为 LinkedHashMap
-4. 《浅谈单链表与双链表的区别》 https://blog.csdn.net/kangxidagege/article/details/80211225
-5. https://leetcode-cn.com/problems/lru-cache/solution/shu-ju-jie-gou-fen-xi-python-ha-xi-shuang-xiang-li/
+4. 不能使用数组，因为：数组利用下标定位，时间复杂度为O(1)，链表定位元素时间复杂度O(n)；数组插入或删除元素的时间复杂度O(n)，链表的时间复杂度O(1)
+5. 《浅谈单链表与双链表的区别（以及数组和链表的区别）》 https://blog.csdn.net/kangxidagege/article/details/80211225
+6. https://leetcode-cn.com/problems/lru-cache/solution/shu-ju-jie-gou-fen-xi-python-ha-xi-shuang-xiang-li/
 
 0+0
