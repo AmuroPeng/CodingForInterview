@@ -1,3 +1,12 @@
+## 字符
+1. ASCII码
+```javascript
+"ABC".charCodeAt(0) // returns 65 ("A")
+"ABC".charCodeAt(1) // returns 66 ("B")
+"ABC".charCodeAt(2) // returns 67 ("C")
+"ABC".charCodeAt(3) // returns NaN
+```
+
 ## 数组
 1. 新建数组 填充0
 ```javascript
