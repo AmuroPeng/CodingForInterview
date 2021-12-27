@@ -25,6 +25,15 @@
    let index = arr.indexOf('nothing');
    // 结果：2
    ```
+4. 二维数组 初始化
+   ```javascript
+   matrix = new Array(n).fill(0).map(() => new Array(n).fill(0));
+   or
+   matrix = new Array(n).fill(0).map(function () {
+       return new Array(n).fill(0);
+   })
+   ```
+   不能直接new里面套new，因为会导致每一行引用的都是同一个[0,0,0]
 
 ## Map
 1. Map里没有的key也可以get，得到undefined
