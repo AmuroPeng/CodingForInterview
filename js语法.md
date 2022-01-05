@@ -6,6 +6,9 @@
 "ABC".charCodeAt(2) // returns 67 ("C")
 "ABC".charCodeAt(3) // returns NaN
 ```
+2. Math库
+   - `Math.floor()` 向下取整
+
 
 ## 数组
 1. 新建数组 填充0
@@ -87,8 +90,19 @@ console.log(value);
 // "o"
 ```
 
-## 查看对象的类型
+## 类型
+### 查看对象的类型
 ```javascript
+1. (最好用)
+function isArray(myArray) {
+   return myArray.constructor.toString().indexOf("Array") > -1;
+   // true|false
+}
+2. 
 const map = new Map();
 map.toString() // [object Map]
 ```
+### 强制类型转换
+   - `Number()`
+   - `String()` = `.toString()`
+   - `parseInt()` & `parseFloat()`
