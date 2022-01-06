@@ -9,6 +9,22 @@
 2. Math库
    - `Math.floor()` 向下取整
 
+## 字符串
+### 去掉两端的空格 trim
+```javascript
+str.trim()
+// "   abc   "
+// "abc"
+```
+
+### 正则
+```javascript
+str = "a b c"
+str.split(/\s+/) // "abc"
+```
+- **\s**: 匹配一个空白字符，包括**空格**、制表符、换页符和**换行符**
+- **+**: 匹配`1`个或多个
+- **星号***：匹配`0`个或多个
 
 ## 数组
 1. 新建数组 填充0
@@ -81,8 +97,8 @@ for (let [key, value] of mySet.entries()) {
 ## 循环
 1. 循环字符串
 ```javascript
-let iterable = "boo";  
-for (let value of iterable) {  
+let str = "boo";  
+for (let value of str) {  
 console.log(value);  
 }
 // "b"
@@ -106,3 +122,4 @@ map.toString() // [object Map]
    - `Number()`
    - `String()` = `.toString()`
    - `parseInt()` & `parseFloat()`
+
