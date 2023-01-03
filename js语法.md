@@ -8,6 +8,7 @@
 ```
 2. Math库
    - `Math.floor()` 向下取整
+   - `Math.ceil()` 向上取整
 
 ## 字符串
 ### 去掉两端的空格 trim
