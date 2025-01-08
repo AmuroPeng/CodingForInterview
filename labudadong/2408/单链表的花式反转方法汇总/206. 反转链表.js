@@ -23,4 +23,11 @@ var reverseList = function(head) {
     //     if (nxt) nxt = nxt.next;
     // }
     // return pre;
+
+    // 递归
+    if (head === null || head.next === null) return head;
+    let last = reverseList(head.next);
+    head.next.next = head;
+    head.next = null;
+    return last;
 };
