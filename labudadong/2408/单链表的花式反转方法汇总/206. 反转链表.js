@@ -30,20 +30,4 @@ var reverseList = function(head) {
     // head.next.next = head;
     // head.next = null;
     // return last;
-
-// 巩固
-    // if (head === null || head.next === null) return head;
-    // let pre = null, cur = head, nxt = head.next;
-    // while (cur) {
-    //     cur.next = pre;
-    //     pre = cur;
-    //     cur = nxt;
-    //     if (nxt) nxt = nxt.next;
-    // }
-    // return pre;
-    if (head === null || head.next === null) return head;
-    let last = reverseList(head.next);
-    head.next.next = head;
-    head.next = null;
-    return last;
 };
